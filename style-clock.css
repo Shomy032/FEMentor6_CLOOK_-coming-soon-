@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Red Hat Text', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #211a29;
+  background-image: url(./images/bg-stars.svg), url(/images/pattern-hills.svg);
+  background-size: cover , contain;
+  background-repeat: no-repeat ,no-repeat;
+  background-position: center center , center 75vh;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2.2rem;
+  color: #d1d1d1;
+  font-weight: 500;
+}
+
+.sat {
+  width: 900px;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social-media {
+  width: 200px;
+  margin: 15rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media i {
+  font-size: 1.7rem;
+  color: #757575;
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.social-media i:hover {
+  color: #D54F73;
+}
+
+h4 {
+  font-weight: 300;
+  color: #d1d1d1;
+  opacity: 0.7;
+}
+
+h3, h4 {
+  text-align: center;
+  width: 180px;
+}
+
+h3 {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #2C2C44), to(#464661));
+  background-image: linear-gradient(#2C2C44 70%, #464661);
+  color: #D54F73;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-size: cover , 1300px;
+    background-position: center center , center 75vh;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .sat {
+    width: 360px;
+  }
+  .social-media {
+    width: 150px;
+    margin: 17rem auto 0;
+  }
+  h3, h4 {
+    width: 80px;
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 0rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style-clock.css.map */
